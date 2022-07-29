@@ -1,26 +1,19 @@
-// import * as THREE from 'three';
-
-// const scene = new THREE.Scene();
-
-// const camera = new THREE.Camera();
 
 
-
-
-// function testParam(input) {
-//     return input*input;
+function testParam(input) {
+    return input*input;
     
-// }
+}
 
-// function factorial(n) {
-//     if (n == 0) {
-//         return 1;
-//     }
-//     else{
-//         return factorial(n-1)*n;
-//     }
+function factorial(n) {
+    if (n == 0) {
+        return 1;
+    }
+    else{
+        return factorial(n-1)*n;
+    }
     
-// }
+}
 
 const inputYear = '1984';
 console.log(Number(inputYear), inputYear);
@@ -54,3 +47,17 @@ if (height) {
 } else {
     console.log("Does not have height");
 }
+
+
+//Equality operator '==' and '==='
+const age = '18';
+if (age === 18) {
+    console.log("Is a number");
+}else{
+    console.log("not an integer");
+}
+
+const userInput = prompt("What is your fav number?");
+
+console.log(userInput);
+
