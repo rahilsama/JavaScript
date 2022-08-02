@@ -54,7 +54,7 @@ const age = '18';
 if (age === 18) {
     console.log("Is a number");
 }else{
-    console.log("not an integer");
+    console.log("not an  integer");
 }
 
 const userInput = prompt("What is your fav number?");
