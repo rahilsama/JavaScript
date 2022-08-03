@@ -61,3 +61,18 @@ const userInput = prompt("What is your fav number?");
 
 console.log(userInput);
 
+
+const hasDrivingLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDrivingLicense && hasGoodVision);
+console.log(hasDrivingLicense || hasGoodVision);
+console.log(!hasDrivingLicense);
+
+const shouldDrive = hasDrivingLicense && hasGoodVision;
+
+if (shouldDrive) {
+    console.log("Sarah should drive!");
+}else{
+    console.log("Sarah should drive! NAAAT!");
+}
