@@ -126,3 +126,5 @@ if (averageDolphinScoreBonus1 > averageKoalaScoreBonus1 && averageDolphinScoreBo
 }else{
     console.log("Nobody wins!");
 }
+
+
