@@ -10,6 +10,8 @@ logger();
 logger();
 
 function fruit_processor(apples, oranges){
+    apples = cut_fruits_to_pieces(apples);
+    oranges =cut_fruits_to_pieces(oranges);
     console.log(apples, oranges);
     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
     return juice;
@@ -57,4 +59,14 @@ const years_until_retirement = (birth_year, first_name) => {
 
 
 console.log(years_until_retirement(1999, 'Rahil'));
+
+
+//Functions calling other Functions
+function cut_fruits_to_pieces(fruit) {
+    return fruit*4;
+}
+
+//We reuse the function we made earlier 
+
+console.log(fruit_processor(5, 10));
 
