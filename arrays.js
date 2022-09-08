@@ -33,3 +33,10 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(year[0]), calcAge(year[1]), calcAge(year[year.length - 1])];
 console.log(ages);
+
+
+//Basic Array Operations (Methods)
+const newFriends = ["Michel", "Steven", "Peter"];
+//Add elements
+const newLength = newFriends.push("Jay");
+console.log(newFriends);
