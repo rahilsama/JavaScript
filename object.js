@@ -34,3 +34,33 @@ console.log(rahil.calcAge());
 
 
 console.log(rahil.getSummary());
+
+
+//Coding challenge #3
+
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function() {
+        return this.mass/(this.height * this.height);
+        
+    }
+};
+
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function() {
+        return this.mass/(this.height * this.height);
+        
+    }
+};
+
+
+console.log(`${john.fullName} has BMI of ${john.calcBMI()}, which is ${john.calcBMI() > mark.calcBMI() ? "higher" : "lower"} than ${mark.fullName}, who has BMI of ${mark.calcBMI()}`);
+
+
