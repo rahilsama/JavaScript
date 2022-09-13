@@ -67,3 +67,5 @@ console.log(`${john.fullName} has BMI of ${john.calcBMI()}, which is ${john.bmi 
 const ren = {
     name: "Hello there"
 };
+
+
