@@ -19,7 +19,8 @@ for(let rep = 1; rep <= 10; rep++){
 
 const nameArray = ["Rahil", "Sama", 22, "Developer", ["Mustan", "Ravi", "Insha"]];
 
-for(let i = 0; i < nameArray.length; i++){
-    console.log(nameArray[i], typeof nameArray[i]);
+for(const element of nameArray){
+    console.log(element, typeof element);
 }
+
 
