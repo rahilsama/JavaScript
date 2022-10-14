@@ -47,3 +47,24 @@ for(let exercise = 1; exercise <= 3; exercise++){
 }
 
 
+//While loop
+
+let rep = 1;
+while(rep <= 10){
+    console.log(`Lifing weight ${rep} time`);
+    rep++;
+}
+
+
+let dice = Math.trunc(Math.random()*6) + 1;
+
+
+while(dice !== 6){
+    console.log(`You rolled a ${dice}` );
+    dice = Math.trunc(Math.random()*6) + 1; 
+}
+
+console.log("Finally you rolled a six!");
+
+
+console.log(dice);
