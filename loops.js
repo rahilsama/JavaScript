@@ -24,3 +24,18 @@ for(const element of nameArray){
 }
 
 
+const jonas = [ 
+    "Jonas",
+    "Schmedtmann",
+    2037 - 1991,
+    "teacher",
+    ["Michael", "Peter", "Steven"]
+];
+
+
+//will loop in reverse
+for (let i = jonas.length-1; i>=0; i-- ){
+    console.log(jonas[i]);
+}
+
+
