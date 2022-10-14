@@ -39,3 +39,11 @@ for (let i = jonas.length-1; i>=0; i-- ){
 }
 
 
+for(let exercise = 1; exercise <= 3; exercise++){
+    console.log(`Starting Exercise ${exercise} .........`);
+    for(let rep = 1; rep <= 5; rep++){
+        console.log(`Doing rep number ${rep}`);
+    }
+}
+
+
