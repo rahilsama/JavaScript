@@ -45,9 +45,10 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "🎉 Correct Number!";
     document.querySelector(".number").textContent = val;
 
+    //Highscore checker.
     if (score > highscore) {
       highscore = score;
-      document.querySelector(".highscore").textContent = score;
+      document.querySelector(".highscore").textContent = highscore;
     }
 
     //changing the CSS style as the game is won
