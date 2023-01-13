@@ -29,6 +29,8 @@ let val = Math.floor(Math.random() * 21);
 
 let score = 20;
 
+let highscore = 0;
+
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess);
@@ -42,7 +44,11 @@ document.querySelector(".check").addEventListener("click", function () {
   else if (guess === val) {
     document.querySelector(".message").textContent = "🎉 Correct Number!";
     document.querySelector(".number").textContent = val;
-    document.querySelector(".highscore").textContent = score;
+
+    if (score > highscore) {
+      highscore = score;
+      document.querySelector(".highscore").textContent = score;
+    }
 
     //changing the CSS style as the game is won
     document.querySelector("body").style.backgroundColor = "#60b347";
