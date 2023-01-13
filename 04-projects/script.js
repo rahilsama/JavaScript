@@ -25,7 +25,7 @@
 
 //lets make our code react to the clicks made on the dom: EVENT handlers
 
-const val = Math.floor(Math.random() * 21);
+let val = Math.floor(Math.random() * 21);
 
 let score = 20;
 
@@ -43,6 +43,12 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "🎉 Correct Number!";
     document.querySelector(".number").textContent = val;
     document.querySelector(".highscore").textContent = score;
+
+    //changing the CSS style as the game is won
+    document.querySelector("body").style.backgroundColor = "#60b347";
+
+    //increasing width of the correct number
+    document.querySelector(".number").style.width = "30rem";
   }
   //Number is entered but is not correct
   else {
@@ -65,4 +71,25 @@ document.querySelector(".check").addEventListener("click", function () {
   }
 });
 
-document.querySelector(".again").addEventListener("click", function () {});
+document.querySelector(".again").addEventListener("click", function () {
+  //Reseting the message to initial one
+  document.querySelector(".message").textContent = "Start guessing...";
+
+  //changing the CSS style as the game is resetted and make it go back to the black
+  document.querySelector("body").style.backgroundColor = "#222";
+
+  //decreasing width of the number back to initial value
+  document.querySelector(".number").style.width = "15rem";
+  //changing the value of number back to '?'
+  document.querySelector(".number").textContent = "?";
+
+  //Resetting score values
+  score = 20;
+  document.querySelector(".score").textContent = score;
+
+  //getting a new random number
+  val = Math.floor(Math.random() * 21);
+
+  //resetting the guess value
+  document.querySelector(".guess").value = "";
+});
