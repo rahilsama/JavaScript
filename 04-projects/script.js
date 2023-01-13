@@ -32,24 +32,34 @@ let score = 20;
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess);
-
+  //If no number is inserted
   if (!guess) {
     console.log(
       (document.querySelector(".message").textContent = "NO Number!")
     );
-  } else if (guess === val) {
+  }
+  //Correct number is entered
+  else if (guess === val) {
     document.querySelector(".message").textContent = "🎉 Correct Number!";
     document.querySelector(".number").textContent = val;
     document.querySelector(".highscore").textContent = score;
-  } else {
-    if (score > 1) {
+  }
+  //Number is entered but is not correct
+  else {
+    //Execute only if the score is more than 0.
+    if (score > 0) {
       document.querySelector(".score").textContent = --score;
+      //If the guess was higher than the number
       if (guess > val) {
         document.querySelector(".message").textContent = "Too high 📈";
-      } else {
+      }
+      //If the guess was lower than the number
+      else {
         document.querySelector(".message").textContent = "Too low 📉";
       }
-    } else {
+    }
+    //Game over since the score is 0
+    else {
       document.querySelector(".message").textContent = "Game Over 💀";
     }
   }
